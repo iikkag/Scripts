@@ -1,1 +1,1 @@
-Get-NetAdapter | ForEach-Object { netsh interface ip set dns "$($_.Name)" dhcp }
+Get-NetAdapter | Set-DNSClientServerAddress -ResetServerAddresses

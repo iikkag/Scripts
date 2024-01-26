@@ -1,0 +1,1 @@
+powershell -command "Enable-WindowsOptionalFeature -Online -FeatureName 'TelnetClient'"
