@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri "https://diskanalyzer.com/files/wiztree_4_15_portable.zip" -OutFile C:\Temp\wiztree.zip; Expand-Archive -Path C:\Temp\wiztree.zip -Destination C:\Temp\; Start-Process C:\Temp\wiztree.exe -ArgumentList '"C:" /export="c:\temp\export%d_%t.csv" /admin=1'

@@ -1,0 +1,1 @@
+Get-ChildItem C:\Users\*\AppData\Local\Packages\* -ErrorAction SilentlyContinue | ForEach-Object { If (($_.Name.Split('_')[0]) -in ('Microsoft.AAD.BrokerPlugin', 'Microsoft.Windows.ContentDeliveryManager')) { Remove-Item -Path $_.FullName }}
